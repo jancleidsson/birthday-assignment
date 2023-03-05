@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      target: build_image
+    command: java -jar birthday-assignment-1.0.jar
+    volumes:
+      - ./src/main/resources:/app/src/main/resources
